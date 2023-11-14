@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    background-color: grey;
+    
+.oscuro{
+    background-color: black;
+}
+}
+.menu{
+    position: relative;
+    left: -100%;
+    transition: all 500ms;
+}
+.enlace{
+    display: block;
+    padding: 15px;
+    color: lightskyblue;
+    text-decoration: none;
+    text-align: center;
+}
+.lista{
+    list-style: linear-gradient();
+}
+.menu ul{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+.menu ul li a:hover{
+    background-color:  lightcoral;
+    border: 2px solid grey;
+}
+.burga{
+    cursor: pointer;
+    
+}
+.mostrar{
+    left: 0;
+}
+
+@media(min-width:900px){
+    .menu{
+       
+        left: 0;
+        
+    }
+    .menu ul{
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(auto-fill, 150px);
+    }
+    .burga{
+        display: none;
+    }
+}
